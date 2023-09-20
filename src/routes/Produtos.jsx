@@ -8,32 +8,11 @@ export default function Produtos() {
 
     document.title = "Lista de Produtos";
 
-    const [exemplo, setExemplo] = useState([{}]);
-
-    const [count, setCount] = useState(0);
-
-    useEffect(()=>{
-      console.log("Use-Effect que será sempre renderizado!");
-    });
-
-    useEffect(()=>{
-      console.log("Use-Effect que será renderizado apenas 1 vez!");
-
-        setExemplo(ListaProdutos);
-
-    },[]);
-
-    useEffect(()=>{
-      console.log("Use-Effect que será renderizado o objeto ou componente ou elemento que está no array de depenências sofrer atualização.");
-    },[count]);
-
-
 
 
     return (
       <div>
           <h1>LISTA DE PRODUTOS</h1>
-
 
         <div>
           <button onClick={()=> setCount(count + 1)}>COUNTER - {count}</button>
@@ -74,4 +53,16 @@ export default function Produtos() {
       </div>
     )
   }
+
+
   
+  // const [exemplo, setExemplo] = useState([{}]);
+  // const [count, setCount] = useState(0);
+
+  // useEffect(()=>{
+  //   console.log("Use-Effect que será sempre renderizado!");
+  // });
+  
+  // useEffect(()=>{
+  //   console.log("Use-Effect que será renderizado o objeto ou componente ou elemento que está no array de depenências sofrer atualização.");
+  // },[count]);
