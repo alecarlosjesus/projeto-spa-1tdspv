@@ -25,12 +25,9 @@ export default function EditarProdutos() {
   });
 
   const handleChange = (event) =>{
-
     //Destructuring
     const {name, value} = event.target;
-
     setProduto({...produto,[name]:value});
-  
   }
 
   const handleSubmit = (event) =>{
