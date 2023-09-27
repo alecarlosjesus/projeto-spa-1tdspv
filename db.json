@@ -83,6 +83,13 @@
       "preco": "110",
       "img": "https://m.media-amazon.com/images/I/61mcOyUlsTL._AC_SL1400_.jpg",
       "id": 12
+    },
+    {
+      "id": 13,
+      "nome": "Televisão",
+      "desc": "14\"",
+      "preco": "500",
+      "img": "https://i.zst.com.br/thumbs/12/16/15/1005927.jpg"
     }
   ]
 }
