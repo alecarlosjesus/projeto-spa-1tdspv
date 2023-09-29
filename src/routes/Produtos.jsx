@@ -34,7 +34,7 @@ export default function Produtos() {
         
         {open ? <ModalInserir open={open} setOpen={setOpen}/> : ""}
 
-      <button onClick={()=> setOpen(true)}>OPEN-MODAL</button>
+      <Link onClick={()=> setOpen(true)}>Cadastrar Produtos</Link>
 
         <div>
           <table className={classes.tableStyle}>
@@ -62,7 +62,7 @@ export default function Produtos() {
             </tbody>
             <tfoot>
               <tr>
-                <td colSpan="5" className={classes.tableDataStyle}>Total de Produtos: {listaProdutoLocal.length}</td>
+                <td colSpan="6" className={classes.tableDataStyle}>Total de Produtos: {listaProdutoLocal.length}</td>
               </tr>
             </tfoot>
           </table>
